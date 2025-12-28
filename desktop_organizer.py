@@ -15,8 +15,8 @@ class FileOrganizer:
         self.source_dir = Path(source_dir).expanduser()
         
         # Your personal info for resume matching
-        self.first_name = 'samia'
-        self.last_name = 'ibrahim'
+        self.first_name = 'firstname'
+        self.last_name = 'lastname'
         
         # Define category mappings based on file extensions
         self.categories = {
@@ -53,7 +53,7 @@ class FileOrganizer:
         has_year = any(str(year) in name_lower for year in range(2020, 2031))
         
         # Check for state codes
-        has_state = 'il' in name_lower or 'mn' in name_lower
+        has_state = 'ca' in name_lower or 'ny' in name_lower
         
         # Check for tax keywords
         has_tax_keyword = any(keyword in name_lower for keyword in ['federal', 'state', 'tax', '1040', 'w2', 'w-2'])
