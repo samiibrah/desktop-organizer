@@ -1,9 +1,8 @@
-# desktop-organizer
-# Smart File Organizer (macOS)
+# desktop-organizer (macOS)
 
 A small Python utility that organizes files in a folder (like `~/Downloads`) **without relying on naming conventions**—primarily by **file type**, with a few **smart, high-priority pattern rules** (Resumes, Tax Documents, Screenshots). It can also organize by **creation date (year/month)**.
 
-**Use carefully:** This script can move files. Always run a dry run first.
+**Use carefully:** Always run a dry run first.
 
 ---
 
@@ -25,7 +24,7 @@ The script checks these before normal file-type rules:
 - **Resumes** → `Resumes/`  
   Detects `resume`/`cv` plus your name patterns.
 - **Tax Documents** → `Tax Documents/`  
-  Looks for years (2020–2030) plus state codes (`il`, `mn`) or tax keywords (`1040`, `w2`, `tax`, etc.).
+  Looks for years (2020–2030) plus state codes (`ca`, `mn`) or tax keywords (`1040`, `w2`, `tax`, etc.).
 - **Screenshots** → `Screenshots/`  
   Matches common macOS screenshot naming patterns (e.g., “Screenshot”, “Screen Shot”, “capture”, etc.).
 
